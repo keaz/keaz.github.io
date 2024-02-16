@@ -1,37 +1,10 @@
 .skillsSection {
-  padding: 4rem 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.heading {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.subheading {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.skillsBlock {
-  margin-bottom: 2rem;
-}
-
-.skillsList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skillsList li {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 0.5rem;
+  perspective: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Adjusted for visual spacing */
+  padding: 20px;
+  background-color: white; /* Set the background color to white */
 }
 
