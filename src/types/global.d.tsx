@@ -7,3 +7,9 @@ type Project = {
   imageUrl: string;
   detailPageUrl: string;
 };
+
+type Skill = {
+  title: string;
+  description: string;
+  imageUrl: string;
+};
