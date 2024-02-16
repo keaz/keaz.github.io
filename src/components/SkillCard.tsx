@@ -37,6 +37,7 @@ export default function SkillCard({ title, imageUrl }: SkillCardProps) {
       onMouseEnter={() => setStyle({ transition: 'none' })} // Remove transition for instant effect on enter
       onMouseLeave={resetTilt}>
       <img src={imageUrl} alt={title} />
+      <div className={styles.skillTitle}>{title}</div>
     </div>
   );
 }

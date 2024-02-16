@@ -1,4 +1,6 @@
 .skillCard {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centers children horizontally in a flex column */
@@ -7,15 +9,37 @@
   height: 200px; /* Fixed height, adjust as needed */
   padding: 20px;
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px 3px rgba(8, 19, 250, 0.3);
   border-radius: 8px;
   transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #f4f3ff; /* Off-white background */
+  background-color: #3c4072; /* Off-white background */
+  color: #fff; /* White text */
 }
 
+.skillCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start from the left */
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Light white shine */
+  transform: skewX(-20deg); /* Tilt the shine for a better effect */
+  transition: left 0.5s;
+}
+
+@keyframes shine {
+  to {
+    left: 100%;
+  }
+}
+
+.skillCard:hover::before {
+  animation: shine 0.75s;
+}
 .skillCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 6px 4px rgba(8, 19, 250, 0.2); 
 }
 .skillCard img {
   max-width: 100%; /* Ensure image doesn't exceed the card width */
@@ -23,6 +47,12 @@
   object-fit: contain;
 }
 
+.skillTitle {
+  margin-top: 10px; /* Space between image and title */
+  text-align: center;
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: if you want the title to stand out */
+}
 /* For tablets and below */
 @media (max-width: 768px) {
   .skill-card {
