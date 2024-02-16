@@ -45,6 +45,16 @@ const skils: Skill[] = [
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'
   },
   {
+    title: 'Dcoker',
+    description: 'Docker',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg'
+  },
+  {
+    title: 'Kubernetes',
+    description: 'Kubernetes',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg'
+  },
+  {
     title: 'React',
     description: 'Frontend library for building user interfaces',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg'
