@@ -1,0 +1,21 @@
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
