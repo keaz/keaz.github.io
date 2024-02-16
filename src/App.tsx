@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import NavBar from './components/NavBar';
+import MediumArticles from './components/MediumArticles';
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Projects />
+        <MediumArticles />
         <Contact />
       </main>
       <Footer />
