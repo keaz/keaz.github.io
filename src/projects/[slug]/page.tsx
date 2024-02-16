@@ -1,7 +1,7 @@
 //'use client';
 
-import projects from "@/data/projects";
-import Project from "@/components/client/Project";
+import projects from "../../data/projects";
+import Project from "../../components/Project";
 
 
 // Return a list of `params` to populate the [slug] dynamic segment
