@@ -26,10 +26,10 @@ export default function NavBar() {
 
 
   return (
-    <nav className={`${styles.navbar} ${isScrolled ? styles.solidBg : styles.transparentBg}`}>
+    <nav id='nav-bar' className={`${styles.navbar} ${isScrolled ? styles.solidBg : styles.transparentBg}`}>
       <ul className={styles.navList}>
         <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
-          <Link to="/">Home</Link>
+          <Link to="root" spy={true} smooth={true} offset={-70} duration={500} >Home</Link>
         </li>
         <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
           <Link to="about-section" spy={true} smooth={true} offset={-70} duration={500} > About </Link>
