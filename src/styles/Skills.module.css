@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px; /* Adjusted for visual spacing */
+  gap: 10px; /* Adjusted for visual spacing */
   padding: 20px;
   background-color: #d3d3d3; /* Set the background color to white */
 }

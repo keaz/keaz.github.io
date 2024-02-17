@@ -25,6 +25,11 @@ const skils: Skill[] = [
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg'
   },
   {
+    title: 'Hibernate',
+    description: 'Best ORM for Java',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg'
+  },
+  {
     title: 'MySQL',
     description: 'The world\'s most popular open source database',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg'
@@ -33,6 +38,16 @@ const skils: Skill[] = [
     title: 'OpenDJ',
     description: 'Open source LDAP directory services',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/OpenDJ_Logo.svg/605px-OpenDJ_Logo.svg.png'
+  },
+  {
+    title: 'Keycloak',
+    description: 'Keycloak',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Keycloak_Logo.png'
+  },
+  {
+    title: 'OIDC',
+    description: 'OIDC',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/OpenID_logo.svg/640px-OpenID_logo.svg.png'
   },
   {
     title: 'Kafka',
@@ -45,6 +60,11 @@ const skils: Skill[] = [
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'
   },
   {
+    title: 'Cloudflare',
+    description: 'Best IDE for developers',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg'
+  },
+  {
     title: 'Dcoker',
     description: 'Docker',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg'
@@ -55,6 +75,11 @@ const skils: Skill[] = [
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg'
   },
   {
+    title: 'Jenkins',
+    description: 'Jenkins',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg'
+  },
+  {
     title: 'React',
     description: 'Frontend library for building user interfaces',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg'
@@ -63,6 +88,21 @@ const skils: Skill[] = [
     title: 'NeoVim',
     description: 'Best IDE for developers',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/neovim/neovim-original.svg'
+  },
+  {
+    title: 'Bash',
+    description: 'Best IDE for developers',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg'
+  },
+  {
+    title: 'Linux',
+    description: 'Linux',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg'
+  },
+  {
+    title: 'macOS',
+    description: 'MacOS',
+    imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg'
   },
 ];
 

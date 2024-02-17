@@ -15,7 +15,7 @@ export default function SkillCard({ title, imageUrl }: SkillCardProps) {
     const centerY = top + height / 2;
     const percentX = (e.clientX - centerX) / (width / 2);
     const percentY = (e.clientY - centerY) / (height / 2);
-    const tiltMaxAngle = 4; // Max tilt angle in degrees
+    const tiltMaxAngle = 5; // Max tilt angle in degrees
 
     setStyle({
       transform: `rotateY(${percentX * tiltMaxAngle}deg) rotateX(${percentY * -tiltMaxAngle}deg)`,

@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import NavBar from './components/NavBar';
 import MediumArticles from './components/MediumArticles';
+import RustCrates from "./components/RustCrates";
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Skills />
+        <RustCrates />
         <Projects />
         <MediumArticles />
         <Contact />
