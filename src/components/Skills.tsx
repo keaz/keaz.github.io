@@ -5,7 +5,7 @@ import skills from "../data/skils"
 
 export default function Skills() {
   return (
-    <div className={styles.skillsSection}>
+    <div id="skills" className={styles.skillsSection}>
       {skills.map(skill => (
         <SkillCard key={skill.title} title={skill.title} imageUrl={skill.imageUrl} />
       ))}

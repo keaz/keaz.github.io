@@ -20,8 +20,10 @@ function App() {
         <Hero />
         <AboutMe />
         <Skills />
-        <RustCrates />
-        <Projects />
+        <div id='portfolio'>
+          <RustCrates />
+          <Projects />
+        </div>
         <MediumArticles />
         <Contact />
       </main>

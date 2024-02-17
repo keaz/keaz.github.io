@@ -4,7 +4,7 @@ import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
   return (
-    <section className={styles.contactSection}>
+    <section id='contact' className={styles.contactSection}>
       <div className={styles.container}>
         <h2 className={styles.heading}>Get In Touch</h2>
         <form className={styles.contactForm} onSubmit={(e) => e.preventDefault()}>

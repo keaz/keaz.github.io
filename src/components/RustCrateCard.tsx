@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from '../styles/Crates.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload, faHome } from '@fortawesome/free-solid-svg-icons';
 
 interface Crate {
   id: string;
@@ -30,11 +32,15 @@ export default function RustCrateCard({ crateId }: { crateId: string }) {
   }
 
   return (
-    <div>
-      <div key={crate.id} className={styles.crateCard}>
-        <h3>{crate.name}</h3>
-        <p>Downloads: {crate.downloads}</p>
-        <p>Homepage: <a href={`https://crates.io/crates/${crateId}`} target="_blank" rel="noopener noreferrer">Link</a></p>
+    <div className={styles.crateCard}>
+      <h3>{crate.name}</h3>
+      <div className={styles.crateInfo}>
+        <a href={`https://crates.io/crates/${crateId}`} target="_blank" rel="noopener noreferrer" className={styles.homepage}>
+          <FontAwesomeIcon icon={faHome} />
+        </a>
+        <span className="downloads">
+          <FontAwesomeIcon icon={faDownload} /> {crate.downloads}
+        </span>
       </div>
     </div>
   );

@@ -21,25 +21,24 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: 300px; /* Fixed width for consistency */
+  width: 200px; /* Fixed width for consistency */
   text-align: center; /* Center the text within each card */
 }
 
-.crateCard h3 {
-  color: #333;
-  margin: 0 0 10px 0;
+.crateInfo {
+  align-items: center; /* Align items vertically in the center */
 }
 
-.crateCard p {
-  color: #666;
-  margin: 5px 0;
+.downloads {
+  margin-right: 5px; /* Adjust this value to bring icons closer or further apart */
 }
 
-.crateCard a {
-  color: #007bff;
-  text-decoration: none;
+.downloads, .homepage {
+  margin-right: 5px; 
 }
 
-.crateCard a:hover {
-  text-decoration: underline;
+.crateCard svg {
+  margin-right: 5px; /* Space between icon and text */
+  width: 16px; /* Icon size */
+  height: auto;
 }

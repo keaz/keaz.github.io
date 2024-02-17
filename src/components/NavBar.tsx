@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { useEffect, useState } from 'react';
 import styles from "../styles/NavBar.module.css";
 
@@ -32,13 +32,16 @@ export default function NavBar() {
           <Link to="/">Home</Link>
         </li>
         <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
-          <Link to="/about">About</Link>
+          <Link to="about-section" spy={true} smooth={true} offset={-70} duration={500} > About </Link>
         </li>
         <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} > Skills </Link>
         </li>
         <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
-          <Link to="/contact">Contact</Link>
+          <Link to="portfolio" spy={true} smooth={true} offset={-70} duration={500} > Portfolio </Link>
+        </li>
+        <li className={`${styles.navItem} ${isScrolled ? styles.scrolledNavItem : ''}`}>
+          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} > Contact </Link>
         </li>
       </ul>
     </nav>

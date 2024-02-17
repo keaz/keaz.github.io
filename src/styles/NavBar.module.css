@@ -6,6 +6,7 @@
   z-index: 1000; /* Ensure navbar stays on top of other content */
   width: 100%; /* Ensure navbar extends full width */
   transition: background-color 0.8s ease;
+  font-size: xx-large;
 }
 
 .transparentBg {

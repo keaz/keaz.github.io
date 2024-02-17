@@ -1,21 +1,29 @@
-.footer {
-  color: #fff;
+
+.siteFooter {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey background */
+  margin-top: 20px; /* Ensure there's space above the footer */
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.siteFooter p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
 
-.link {
-  color: #fff;
-  margin: 0 5px;
+.siteFooter ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 15px; /* Space between links */
+}
+
+.siteFooter a {
   text-decoration: none;
+  color: #007bff; /* Link color */
 }
 
-.link:hover {
+.siteFooter a:hover {
   text-decoration: underline;
 }
