@@ -1,0 +1,13 @@
+{
+    "name": "keaz.github.io Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-18",
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    }
+}
