@@ -28,7 +28,7 @@ const projects: Project[] = [
         slug: 'rendezvous-server',
         title: 'RenDezvous Server',
         description: 'A Rendezvous server for decentralize file sharing system, written in Rust',
-        imageUrl: '/path-to-image-2.jpg', // Place your project image in the public folder
+        imageUrl: 'simple-ldap.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/rendezvous-server' // Hypothetical URL to a detailed view
     },
     {
