@@ -1,52 +1,61 @@
 .navbar {
-  color: white;
-  padding: 1rem;
-  position: fixed; /* Make navbar stick to the top */
-  top: 0; /* Position navbar at the very top */
-  z-index: 1000; /* Ensure navbar stays on top of other content */
-  width: 100%; /* Ensure navbar extends full width */
-  transition: background-color 0.8s ease;
-  font-size: xx-large;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    /* Make navbar stick to the top */
+    top: 0;
+    /* Position navbar at the very top */
+    z-index: 1000;
+    /* Ensure navbar stays on top of other content */
+    width: 100%;
+    /* Ensure navbar extends full width */
+    transition: background-color 0.8s ease;
+    font-size: xx-large;
 }
 
 .transparentBg {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .solidBg {
-  background-color: white;
+    background-color: black;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .navList {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    /* Reset default margin */
+    padding: 0;
+    /* Reset default padding */
 }
 
 .navItem {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 .navItem a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.8s ease, transform 0.8s ease; /* Smooth transition for color and transform */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.8s ease, transform 0.8s ease;
+    /* Smooth transition for color and transform */
 }
 
-.navItem a:hover, .navItem a:focus {
-  color: #ffa500; /* Change color on hover/focus */
-  transform: scale(1.1); /* Slightly increase size */
+.navItem a:hover,
+.navItem a:focus {
+    color: #ffa500;
+    /* Change color on hover/focus */
+    transform: scale(1.1);
+    /* Slightly increase size */
 }
 
 .navItem a:focus {
-  outline: none; /* Optional: removes the default focus outline */
-  /* Consider adding a custom outline or box-shadow for a focus indicator that matches your design */
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffa500; /* Example focus style */
-}
-
-.scrolledNavItem a {
-  color: #0078ff; /* Change to this color when scrolling */
+    outline: none;
+    /* Optional: removes the default focus outline */
+    /* Consider adding a custom outline or box-shadow for a focus indicator that matches your design */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ffa500;
+    /* Example focus style */
 }
