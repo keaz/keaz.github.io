@@ -1,57 +1,75 @@
 .articlesSection {
-  background-color: #f8f8f8; /* Off-white color */
-  padding: 20px; /* Add padding if needed */
+    background-color: #f8f8f8;
+    /* Off-white color */
+    padding: 20px;
+    /* Add padding if needed */
 }
+
 .articlesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .heading {
-  text-align: center;
+    text-align: center;
 }
 
 .article {
-  position: relative;
-  overflow: hidden;
-  background-color: #f0f0f0; /* Light grey background, adjust as needed */
-  color: #333; /* Adjust text color for contrast */
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 8px; /* Optional: adds rounded corners */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
-  display: block;
-  width: 300px;
-  border: 1px solid #ccc;
-  text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    /* Light grey background, adjust as needed */
+    color: #333;
+    /* Adjust text color for contrast */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    /* Optional: adds rounded corners */
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.1);
+    /* Optional: adds subtle shadow */
+    display: block;
+    width: 300px;
+    border: 1px solid #ccc;
+    text-decoration: none;
 }
 
 .article::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%; /* Start the shine off to the left */
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%); /* Shine effect */
-  transition: left 0.7s ease-in-out; /* Smooth transition for the shine movement */
-  transform: skewX(-20deg); /* Tilt the shine for a better effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Start the shine off to the left */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    /* Shine effect */
+    transition: left 0.7s ease-in-out;
+    /* Smooth transition for the shine movement */
+    transform: skewX(-20deg);
+    /* Tilt the shine for a better effect */
 }
 
 .article:hover::before {
-  left: 100%; /* Move the shine to the right on hover */
+    left: 100%;
+    /* Move the shine to the right on hover */
 }
-article h3, .article p {
-  color: #333; /* Dark grey for text, adjust as needed */
+
+article h3,
+.article p {
+    color: #333;
+    /* Dark grey for text, adjust as needed */
 }
 
 .article a {
-  color: #007bff; /* Example link color, adjust as needed */
-  text-decoration: none; /* Removes underline from links */
+    color: #007bff;
+    /* Example link color, adjust as needed */
+    text-decoration: none;
+    /* Removes underline from links */
 }
 
 .article a:hover {
-  color: #0056b3; /* Darker blue on hover, adjust as needed */
+    color: #0056b3;
+    /* Darker blue on hover, adjust as needed */
 }

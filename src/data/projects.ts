@@ -28,7 +28,7 @@ const projects: Project[] = [
         slug: 'rendezvous-server',
         title: 'RenDezvous Server',
         description: 'A Rendezvous server for decentralize file sharing system, written in Rust',
-        imageUrl: 'default-rust.webp', // Place your project image in the public folder
+        imageUrl: 'rendezvous_server.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/rendezvous-server' // Hypothetical URL to a detailed view
     },
     {
@@ -36,7 +36,7 @@ const projects: Project[] = [
         slug: 'kcli',
         title: 'Kfcli',
         description: 'A CLI tool to inspect Kafka clusters',
-        imageUrl: 'default-rust.webp', // Place your project image in the public folder
+        imageUrl: 'kafka.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/kcli' // Hypothetical URL to a detailed view
     },
     {
@@ -44,7 +44,7 @@ const projects: Project[] = [
         slug: 'rust-copy',
         title: 'Rust Copy',
         description: 'A replacement for cp',
-        imageUrl: 'default-rust.webp', // Place your project image in the public folder
+        imageUrl: 'cp.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/rust-copy' // Hypothetical URL to a detailed view
     },
     {

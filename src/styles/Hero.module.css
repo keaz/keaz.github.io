@@ -12,16 +12,19 @@
 .heroBody {
   width: 100%;
 }
+
 .title {
   color: #fff;
   font-size: 4.5rem;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 .subtitle {
   color: #fff;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
 .cta {
