@@ -52,7 +52,7 @@ const projects: Project[] = [
         slug: 'actix-web-jwt',
         title: 'Actix Web Jwt',
         description: 'JWT validation middleware for Actix-Web',
-        imageUrl: 'default-rust.webp', // Place your project image in the public folder
+        imageUrl: 'jwt.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/actix-web-jwt' // Hypothetical URL to a detailed view
     },
     // Add more projects as needed
