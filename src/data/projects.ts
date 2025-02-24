@@ -33,6 +33,14 @@ const projects: Project[] = [
     },
     {
         id: 5,
+        slug: 'java-rendezvous-client',
+        title: 'Java File sharing peer',
+        description: 'Decentralized peer to peer file sharing system',
+        imageUrl: 'java-decentralized-peer.webp', // Place your project image in the public folder
+        detailPageUrl: 'https://github.com/keaz/rendezvous-client' // Hypothetical URL to a detailed view
+    },
+    {
+        id: 6,
         slug: 'kcli',
         title: 'Kfcli',
         description: 'A CLI tool to inspect Kafka clusters',
@@ -40,7 +48,7 @@ const projects: Project[] = [
         detailPageUrl: 'https://github.com/keaz/kcli' // Hypothetical URL to a detailed view
     },
     {
-        id: 6,
+        id: 7,
         slug: 'rust-copy',
         title: 'Rust Copy',
         description: 'A replacement for cp',
@@ -48,7 +56,7 @@ const projects: Project[] = [
         detailPageUrl: 'https://github.com/keaz/rust-copy' // Hypothetical URL to a detailed view
     },
     {
-        id: 7,
+        id: 8,
         slug: 'actix-web-jwt',
         title: 'Actix Web Jwt',
         description: 'JWT validation middleware for Actix-Web',
