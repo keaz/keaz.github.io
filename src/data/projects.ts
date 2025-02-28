@@ -20,7 +20,7 @@ const projects: Project[] = [
         slug: 'decentralized-peer',
         title: 'Decentralized Peer',
         description: 'Decentralized peer to peer file sharing system',
-        imageUrl: 'default-rust.webp', // Place your project image in the public folder
+        imageUrl: 'rust-decentralized-peer.webp', // Place your project image in the public folder
         detailPageUrl: 'https://github.com/keaz/decentralized-peer' // Hypothetical URL to a detailed view
     },
     {
