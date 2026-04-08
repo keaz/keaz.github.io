@@ -21,7 +21,7 @@ export default function AboutMe() {
           the operational details that make software dependable in production.
         </p>
         <p className={styles.callout}>
-          I see AI and AI agents as tools for engineers, not replacements for
+          I see AI systems and agentic tooling as tools for engineers, not replacements for
           engineering. In practice they sit in the same toolbox as compilers,
           debuggers, CI, tests, and observability: useful for speeding up repetitive
           work, exploring solution space faster, and improving productivity, while
