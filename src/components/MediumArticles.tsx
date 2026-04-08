@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import styles from '../styles/MediumArticles.module.css'
 
 interface Article {
   title: string;
   link: string;
   pubDate: string;
-  thumbnail: string; // Depending on the service's response structure
+}
+
+interface RssFeedResponse {
+  items: Article[];
 }
 
 export default function MediumArticles() {
@@ -17,8 +19,14 @@ export default function MediumArticles() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get(rssToJsonUrl);
-        setArticles(response.data.items); // Adjust based on actual response structure
+        const response = await fetch(rssToJsonUrl);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch Medium feed: ${response.status}`);
+        }
+
+        const data: RssFeedResponse = await response.json();
+        setArticles(data.items ?? []);
       } catch (error) {
         console.error('Error fetching articles:', error);
       }

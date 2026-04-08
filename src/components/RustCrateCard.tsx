@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import styles from '../styles/Crates.module.css'
 
 interface Crate {
   id: string;
   name: string;
   downloads: number;
-  homepage: string | null; // Homepage might be null
+  homepage: string | null;
+}
+
+interface CratesApiResponse {
+  crate: Crate;
 }
 
 export default function RustCrateCard({ crateId }: { crateId: string }) {
@@ -15,8 +18,14 @@ export default function RustCrateCard({ crateId }: { crateId: string }) {
   useEffect(() => {
     const fetchCrates = async () => {
       try {
-        const response = await axios.get(`https://crates.io/api/v1/crates/${crateId}`)
-        setCrates(response.data.crate);
+        const response = await fetch(`https://crates.io/api/v1/crates/${crateId}`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch crate metadata: ${response.status}`);
+        }
+
+        const data: CratesApiResponse = await response.json();
+        setCrates(data.crate);
       } catch (error) {
         console.error('Error fetching Rust crates:', error);
       }

@@ -34,8 +34,10 @@ export default function Hero() {
         setIsDeleting(true);
       }, pauseDelay);
     } else if (isDeleting && typedText === '') {
-      setIsDeleting(false);
-      setIndex((prevIndex) => (prevIndex + 1) % rotatingRoles.length);
+      timeoutId = setTimeout(() => {
+        setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % rotatingRoles.length);
+      }, typingDelay);
     } else if (isDeleting) {
       timeoutId = setTimeout(() => {
         setTypedText(rotatingRoles[index].substring(0, typedText.length - 1));
