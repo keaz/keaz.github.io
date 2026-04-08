@@ -1,0 +1,35 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#0A0D0C"/>
+  <rect x="54" y="54" width="1092" height="567" rx="36" fill="url(#paint0_linear_1_1)"/>
+  <path d="M164 146H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M164 228H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M164 310H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M164 392H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M164 474H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M164 556H1036" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M278 106V572" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M446 106V572" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M614 106V572" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M782 106V572" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <path d="M950 106V572" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <rect x="180" y="138" width="320" height="176" rx="24" fill="url(#paint1_linear_1_1)"/>
+  <rect x="528" y="138" width="492" height="176" rx="24" fill="rgba(255,255,255,0.04)"/>
+  <rect x="180" y="342" width="840" height="194" rx="24" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="254" cy="226" r="44" fill="#F7B84A"/>
+  <circle cx="340" cy="226" r="44" fill="#7AE582" fill-opacity="0.88"/>
+  <circle cx="426" cy="226" r="44" fill="#F7E6A3" fill-opacity="0.82"/>
+  <text x="564" y="212" fill="#F7FAF8" font-family="'Roboto Mono', monospace" font-size="88" font-weight="700">AICore</text>
+  <text x="564" y="274" fill="#A9B5AE" font-family="'Roboto Mono', monospace" font-size="36">IR-first language for human + AI collaboration</text>
+  <text x="214" y="432" fill="#7AE582" font-family="'Roboto Mono', monospace" font-size="28" letter-spacing="4">DETERMINISTIC TOOLING</text>
+  <text x="214" y="480" fill="#F3F7F4" font-family="'Roboto Mono', monospace" font-size="28">Structured diagnostics, contracts, effects, async runtime, and LLVM codegen.</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_1" x1="112" y1="102" x2="1091" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121816"/>
+      <stop offset="1" stop-color="#0E1312"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_1" x1="180" y1="138" x2="500" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7B84A"/>
+      <stop offset="1" stop-color="#E86A33"/>
+    </linearGradient>
+  </defs>
+</svg>

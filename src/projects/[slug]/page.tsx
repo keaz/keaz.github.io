@@ -6,12 +6,8 @@ import Project from "../../components/Project";
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
-  const posts = [
-    { slug: 'project-one' },
-  ];
-
-  return posts.map((post) => ({
-    slug: post.slug,
+  return projects.map((project) => ({
+    slug: project.slug,
   }))
 }
 

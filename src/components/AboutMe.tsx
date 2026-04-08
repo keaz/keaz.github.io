@@ -6,20 +6,32 @@ export default function AboutMe() {
   return (
     <section id="about-section" className={styles.aboutMe}>
       <div className={styles.container}>
-        <h2 className={styles.heading} >About Me</h2>
-        <p className={styles.paragraph}>
-          I&apos;m a passionate software developer with experience in building applications with Rust, Java, Spring, and more.
-          I specialize in back-end development, and Microservices. I&apos;m skilled in deploying scalable applications using Docker and Kubernetes.
-          <p className={styles.paragraph}>
-            My journey in tech started with a fascination for solving complex problems and has grown into a career focused on developing robust, efficient software solutions.
-          </p>
+        <p className={styles.eyebrow}>Backend Engineering • Distributed Systems • Developer Tooling</p>
+        <h2 className={styles.heading}>About Me</h2>
+        <p className={styles.lead}>
+          I&apos;m a software engineer focused on building reliable back-end systems,
+          developer tooling, and infrastructure-heavy products with Rust, Java, and
+          cloud-native platforms.
         </p>
         <p className={styles.paragraph}>
-          When I&apos;m not coding, I enjoy watching movies, photography, and exploring new technologies.
-          I also enjoy writing about my experiences and sharing my knowledge with the community.
-          I&apos;m constantly learning and seeking out new challenges to improve my skills and contribute to the tech community.
+          My recent work has been centered around projects such as AICore, an
+          agent-native programming language, Digital Trust Graph DID for decentralized
+          identity flows, and FluxGate for feature management and rollout safety. I
+          enjoy working close to protocols, platform boundaries, system design, and
+          the operational details that make software dependable in production.
         </p>
-        <p className={styles.paragraph}>I love physics, trying understand how the univers works ;) </p>
+        <p className={styles.callout}>
+          I see AI and AI agents as tools for engineers, not replacements for
+          engineering. In practice they sit in the same toolbox as compilers,
+          debuggers, CI, tests, and observability: useful for speeding up repetitive
+          work, exploring solution space faster, and improving productivity, while
+          judgment, tradeoff analysis, and ownership still stay with the engineer.
+        </p>
+        <p className={styles.paragraph}>
+          Outside of coding I like writing, photography, movies, and learning more
+          about physics and how systems behave, whether that system is software,
+          infrastructure, or the universe itself.
+        </p>
       </div>
     </section>
   );

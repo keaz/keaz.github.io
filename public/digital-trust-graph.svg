@@ -1,0 +1,24 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#091014"/>
+  <rect x="52" y="52" width="1096" height="571" rx="36" fill="url(#paint0_linear_2_1)"/>
+  <circle cx="252" cy="204" r="26" fill="#40C9C6"/>
+  <circle cx="382" cy="170" r="22" fill="#8DE3D8"/>
+  <circle cx="462" cy="274" r="24" fill="#A4B8FF"/>
+  <circle cx="300" cy="336" r="20" fill="#40C9C6"/>
+  <circle cx="180" cy="292" r="18" fill="#8DE3D8"/>
+  <circle cx="424" cy="394" r="18" fill="#F4F8FF"/>
+  <path d="M252 204L382 170L462 274L300 336L180 292L252 204Z" stroke="#71D8D1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 336L424 394L462 274" stroke="#9EAEFF" stroke-width="6" stroke-linecap="round"/>
+  <rect x="540" y="136" width="508" height="170" rx="26" fill="rgba(255,255,255,0.05)"/>
+  <rect x="152" y="446" width="896" height="112" rx="24" fill="rgba(255,255,255,0.04)"/>
+  <text x="588" y="214" fill="#F4F8FF" font-family="'Roboto Mono', monospace" font-size="70" font-weight="700">Digital Trust Graph</text>
+  <text x="588" y="270" fill="#9FB0BE" font-family="'Roboto Mono', monospace" font-size="34">DID lifecycle, OIDC4 bridges, VC services, Polkadot integration</text>
+  <text x="180" y="513" fill="#40C9C6" font-family="'Roboto Mono', monospace" font-size="28" letter-spacing="4">did:dtg</text>
+  <text x="352" y="513" fill="#F4F8FF" font-family="'Roboto Mono', monospace" font-size="28">Wallet-signed identity flows with Rust-first services and SDKs.</text>
+  <defs>
+    <linearGradient id="paint0_linear_2_1" x1="120" y1="90" x2="1100" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111A21"/>
+      <stop offset="1" stop-color="#0D141A"/>
+    </linearGradient>
+  </defs>
+</svg>

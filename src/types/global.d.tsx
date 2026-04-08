@@ -6,6 +6,9 @@ type Project = {
   description: string;
   imageUrl: string;
   detailPageUrl: string;
+  category: string;
+  techStack: string[];
+  featured?: boolean;
 };
 
 type Skill = {
