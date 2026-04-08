@@ -1,1 +1,8 @@
+main {
+  overflow: clip;
+}
 
+.portfolioStack {
+  display: grid;
+  gap: 0;
+}

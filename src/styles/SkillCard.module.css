@@ -1,64 +1,70 @@
 .skillCard {
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers children horizontally in a flex column */
-  justify-content: center; /* Centers children vertically */
-  width: 100px; /* Fixed width, adjust as needed */
-  height: 100px; /* Fixed height, adjust as needed */
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 0 6px 3px rgba(8, 19, 250, 0.3);
-  border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #3c4072; /* Off-white background */
-  color: #fff; /* White text */
+  min-height: 100%;
+  padding: 1.35rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(12, 22, 36, 0.92) 0%, rgba(9, 16, 27, 0.92) 100%);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .skillCard::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%; /* Start from the left */
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%); /* Shine effect */
-  transition: left 0.5s ease-in-out; /* Smooth transition for the shine movement */
-  transform: skewX(-20deg); /* Tilt the shine for a better effect */
-}
-
-.skillCard:hover::before {
-  left: 100%; /* Move the shine to the right on hover */
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(140deg, rgba(124, 232, 200, 0.08), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .skillCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 6px 4px rgba(8, 19, 250, 0.2); 
+  transform: translateY(-4px);
+  border-color: rgba(124, 232, 200, 0.24);
+}
+
+.skillCard:hover::before {
+  opacity: 1;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .skillCard img {
-  max-width: 100%; /* Ensure image doesn't exceed the card width */
-  max-height: 60%; /* Adjust based on your design, controls image height */
+  max-width: 2.3rem;
+  max-height: 2.3rem;
   object-fit: contain;
 }
 
-.skillTitle {
-  margin-top: 10px; /* Space between image and title */
-  text-align: center;
-  font-size: 18px; /* Adjust font size as needed */
-  font-weight: bold; /* Optional: if you want the title to stand out */
-}
-/* For tablets and below */
-@media (max-width: 768px) {
-  .skill-card {
-    width: 45%; /* Adjust based on your layout preference */
-    height: auto; /* Makes height responsive */
-  }
+.skillCategory {
+  color: var(--accent-warm);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
-  .skill-card {
-    width: 90%; /* Takes more space on smaller screens */
-  }
+.skillTitle {
+  margin: 0.55rem 0 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.skillDescription {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
 }

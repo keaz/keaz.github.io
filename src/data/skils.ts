@@ -1,110 +1,130 @@
 const skils: Skill[] = [
   {
     title: 'Rust',
-    description: 'Blazingly fast and memory-efficient prgramming language',
+    category: 'Language',
+    description: 'Systems programming for reliable services, tooling, and performance-sensitive backends.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg'
   },
   {
     title: 'Actix-web',
-    description: 'Balingly fast web framework for Rust',
+    category: 'Framework',
+    description: 'High-performance Rust web services with strong ergonomics for APIs and internal platforms.',
     imageUrl: 'https://avatars.githubusercontent.com/u/32776943?s=200&v=4'
   },
   {
     title: 'Tokio',
-    description: 'A runtime for writing reliable asynchronous applications with Rust',
+    category: 'Runtime',
+    description: 'Async runtime for networked systems, task orchestration, and concurrent workloads in Rust.',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tokio_logo.svg/533px-Tokio_logo.svg.png'
   },
   {
     title: 'Java',
-    description: 'Best programming language for enterprise applications',
+    category: 'Language',
+    description: 'Enterprise-grade application development with a focus on maintainability and scale.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg'
   },
   {
     title: 'Spring Boot',
-    description: 'Enterprise grade framework for Java',
+    category: 'Framework',
+    description: 'Production-ready Java services, REST APIs, and integration-heavy backend applications.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg'
   },
   {
     title: 'Hibernate',
-    description: 'Best ORM for Java',
+    category: 'Data',
+    description: 'Object-relational mapping for data-intensive Java applications and service platforms.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg'
   },
   {
     title: 'MySQL',
-    description: 'The world\'s most popular open source database',
+    category: 'Database',
+    description: 'Relational data storage, schema design, and operational database workflows.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg'
   },
   {
     title: 'OpenDJ',
-    description: 'Open source LDAP directory services',
+    category: 'Identity',
+    description: 'LDAP-backed identity and directory integrations for authentication and user management.',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/OpenDJ_Logo.svg/605px-OpenDJ_Logo.svg.png'
   },
   {
     title: 'Keycloak',
-    description: 'Keycloak',
+    category: 'Identity',
+    description: 'Identity brokering, SSO workflows, and realm extensions for enterprise access flows.',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Keycloak_Logo.png'
   },
   {
     title: 'OIDC',
-    description: 'OIDC',
+    category: 'Identity',
+    description: 'Open standards for secure authentication, federation, and delegated identity flows.',
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/OpenID_logo.svg/640px-OpenID_logo.svg.png'
   },
   {
     title: 'Kafka',
-    description: 'Distributed streaming platform',
+    category: 'Streaming',
+    description: 'Event-driven architectures, asynchronous pipelines, and distributed messaging systems.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg'
   },
   {
     title: 'AWS',
-    description: 'Amazon Web Services',
+    category: 'Cloud',
+    description: 'Cloud-native infrastructure, managed services, and scalable deployment foundations.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg'
   },
   {
     title: 'Cloudflare',
-    description: 'Best IDE for developers',
+    category: 'Edge',
+    description: 'Edge networking, security, and delivery layers for internet-facing applications.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cloudflare/cloudflare-original.svg'
   },
   {
-    title: 'Dcoker',
-    description: 'Docker',
+    title: 'Docker',
+    category: 'Platform',
+    description: 'Containerized development and repeatable runtime environments across services.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg'
   },
   {
     title: 'Kubernetes',
-    description: 'Kubernetes',
+    category: 'Platform',
+    description: 'Container orchestration, service deployment, and operational platform workflows.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg'
   },
   {
     title: 'Jenkins',
-    description: 'Jenkins',
+    category: 'CI/CD',
+    description: 'Continuous integration and build automation for stable delivery pipelines.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg'
   },
   {
     title: 'React',
-    description: 'Frontend library for building user interfaces',
+    category: 'Frontend',
+    description: 'Interface development for product surfaces, internal tools, and portfolio experiences.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg'
   },
   {
     title: 'NeoVim',
-    description: 'Best IDE for developers',
+    category: 'Tooling',
+    description: 'Keyboard-first workflows and highly customized engineering productivity environments.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/neovim/neovim-original.svg'
   },
   {
     title: 'Bash',
-    description: 'Best IDE for developers',
+    category: 'Scripting',
+    description: 'Automation, developer ergonomics, and practical shell tooling for daily engineering work.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg'
   },
   {
     title: 'Linux',
-    description: 'Linux',
+    category: 'Platform',
+    description: 'Server operations, systems-level debugging, and reliable production runtime environments.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg'
   },
   {
     title: 'macOS',
-    description: 'MacOS',
+    category: 'Platform',
+    description: 'Daily engineering environment for development, testing, and productivity workflows.',
     imageUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/apple/apple-original.svg'
   },
 ];
 
 export default skils;
-

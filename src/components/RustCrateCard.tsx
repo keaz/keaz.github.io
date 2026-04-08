@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from '../styles/Crates.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faHome } from '@fortawesome/free-solid-svg-icons';
 
 interface Crate {
   id: string;
@@ -25,23 +23,39 @@ export default function RustCrateCard({ crateId }: { crateId: string }) {
     };
 
     fetchCrates();
-  }, []);
+  }, [crateId]);
 
   if (!crate) {
-    return (<div>Loading...</div>);
+    return (
+      <article className={styles.crateCard}>
+        <span className={styles.crateEyebrow}>Fetching crate</span>
+        <h3>Loading...</h3>
+        <p className={styles.crateDescription}>Pulling the latest metadata from crates.io.</p>
+      </article>
+    );
   }
 
   return (
-    <div className={styles.crateCard}>
+    <article className={styles.crateCard}>
+      <span className={styles.crateEyebrow}>Rust crate</span>
       <h3>{crate.name}</h3>
-      <div className={styles.crateInfo}>
-        <a href={`https://crates.io/crates/${crateId}`} target="_blank" rel="noopener noreferrer" className={styles.homepage}>
-          <FontAwesomeIcon icon={faHome} />
-        </a>
-        <span className="downloads">
-          <FontAwesomeIcon icon={faDownload} /> {crate.downloads}
-        </span>
+      <p className={styles.crateDescription}>
+        Published package with {new Intl.NumberFormat().format(crate.downloads)} downloads.
+      </p>
+      <div className={styles.crateMeta}>
+        <span className={styles.metricLabel}>Downloads</span>
+        <strong>{new Intl.NumberFormat().format(crate.downloads)}</strong>
       </div>
-    </div>
+      <div className={styles.crateLinks}>
+        <a href={`https://crates.io/crates/${crateId}`} target="_blank" rel="noopener noreferrer">
+          Crates.io
+        </a>
+        {crate.homepage && (
+          <a href={crate.homepage} target="_blank" rel="noopener noreferrer">
+            Homepage
+          </a>
+        )}
+      </div>
+    </article>
   );
 }

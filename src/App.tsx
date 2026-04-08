@@ -1,5 +1,4 @@
 import './App.css'
-import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from './components/Footer'
 import AboutMe from './components/AboutMe'
 import Hero from './components/Hero'
@@ -11,16 +10,14 @@ import MediumArticles from './components/MediumArticles';
 import RustCrates from "./components/RustCrates";
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
-    <Router>
+    <>
       <main>
         <NavBar />
         <Hero />
         <AboutMe />
         <Skills />
-        <div id='portfolio'>
+        <div id='portfolio' className="portfolioStack">
           <RustCrates />
           <Projects />
         </div>
@@ -28,7 +25,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </Router>
+    </>
   )
 }
 

@@ -1,7 +1,14 @@
-
 import { Link } from 'react-scroll';
 import { useEffect, useState } from 'react';
 import styles from "../styles/NavBar.module.css";
+
+const sections = [
+    { label: 'Home', to: 'root' },
+    { label: 'About', to: 'about-section' },
+    { label: 'Skills', to: 'skills' },
+    { label: 'Work', to: 'portfolio' },
+    { label: 'Contact', to: 'contact' }
+];
 
 export default function NavBar() {
 
@@ -27,23 +34,48 @@ export default function NavBar() {
 
     return (
         <nav id='nav-bar' className={`${styles.navbar} ${isScrolled ? styles.solidBg : styles.transparentBg}`}>
-            <ul className={styles.navList}>
-                <li className={styles.navItem}>
-                    <Link to="root" spy={true} smooth={true} offset={-70} duration={500} >Home</Link>
-                </li>
-                <li className={styles.navItem}>
-                    <Link to="about-section" spy={true} smooth={true} offset={-70} duration={500} > About </Link>
-                </li>
-                <li className={styles.navItem}>
-                    <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} > Skills </Link>
-                </li>
-                <li className={styles.navItem}>
-                    <Link to="portfolio" spy={true} smooth={true} offset={-70} duration={500} > Portfolio </Link>
-                </li>
-                <li className={styles.navItem}>
-                    <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} > Contact </Link>
-                </li>
-            </ul>
+            <div className={styles.navInner}>
+                <Link
+                    to="root"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    className={styles.brand}
+                >
+                    <span className={styles.brandMark}>KR</span>
+                    <span className={styles.brandText}>Kasun Ranasinghe</span>
+                </Link>
+
+                <ul className={styles.navList}>
+                    {sections.map(section => (
+                        <li key={section.to} className={styles.navItem}>
+                            <Link
+                                to={section.to}
+                                spy={true}
+                                smooth={true}
+                                offset={-80}
+                                duration={500}
+                                className={styles.navLink}
+                                activeClass={styles.active}
+                            >
+                                {section.label}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+
+                <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    className={styles.navCta}
+                >
+                    Let&apos;s Talk
+                </Link>
+            </div>
         </nav>
     );
 }
